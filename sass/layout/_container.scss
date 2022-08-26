@@ -1,0 +1,23 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.section--one {
+    text-align: center;
+    background-image: linear-gradient(white, $light-grey);
+    & > aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: 60px;
+        background-color: $grey;
+
+        & > h3 {
+            padding-left: 10px;
+        }
+    }
+
+    & > h2 {
+        margin: 20px;
+    }
+}

@@ -1,0 +1,11 @@
+@mixin shadow ($colour){
+    box-shadow: 1px 3px 15px 4px $colour;
+}
+
+@mixin style-title {
+    margin: 15px;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+//@include nom-de-mixin; //*//*
