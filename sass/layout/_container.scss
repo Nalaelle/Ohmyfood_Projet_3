@@ -1,16 +1,16 @@
-@import "../utils/variables";
-@import "../utils/mixins";
+@use "../utils/variables";
+@use "../utils/mixins";
 
-.section--one {
+.section--heading {
     text-align: center;
-    background-image: linear-gradient(white, $light-grey);
+    background-image: linear-gradient(white, variables.$light-grey);
     & > aside {
         display: flex;
         justify-content: center;
         align-items: center;
         
         height: 60px;
-        background-color: $grey;
+        background-color: variables.$grey;
 
         & > h3 {
             padding-left: 10px;

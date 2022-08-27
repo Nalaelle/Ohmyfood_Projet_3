@@ -1,5 +1,9 @@
 @mixin shadow ($colour){
-    box-shadow: 1px 3px 15px 4px $colour;
+    box-shadow: 2px 1px 16px -3px $colour;
+}
+
+@mixin zoom {
+    transform: scale(1.02);    
 }
 
 @mixin style-title {

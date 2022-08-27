@@ -1,4 +1,6 @@
- @import "../utils/variables";
+@use "../utils/variables";
+@use "../utils/mixins";
+
 
  button {
     margin: 20px;
@@ -9,12 +11,12 @@
     border-radius: 20px;
     color: white;
     cursor: pointer;
-    box-shadow: 2px 1px 16px -3px grey;
-    background-image: linear-gradient($pink, $purple);
+    @include mixins.shadow(grey);
+    background-image: linear-gradient(variables.$pink, variables.$purple);
     transition: all 200ms;
 
     &:hover {
-        transform: scale(1.02);
+        @include mixins.zoom;
         opacity: 0.9;
     }
 }

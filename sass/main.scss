@@ -1,14 +1,14 @@
+@use "./utils/variables";
+@use "./utils/functions";
+@use "./utils/mixins";
+
+@use "./base/bases";
+
+@use "./components/buttons";
+@use "./components/explains";
+
+@use "./layout/header";
+@use "./layout/container";
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
-
-@import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-
-@import "./base/bases";
-
-@import "./components/buttons";
-
-@import "./layout/header";
-@import "./layout/container";
-

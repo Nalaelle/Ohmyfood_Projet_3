@@ -4,7 +4,8 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
 
 button {
   margin: 20px;
@@ -17,10 +18,62 @@ button {
   cursor: pointer;
   box-shadow: 2px 1px 16px -3px grey;
   background-image: linear-gradient(#FF79DA, #9356DC);
-  transition: all 200ms; }
-  button:hover {
-    transform: scale(1.02);
-    opacity: 0.9; }
+  transition: all 200ms;
+}
+button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.section--explains {
+  counter-reset: steps;
+}
+.section--explains h2 {
+  margin-left: 15px;
+}
+.section--explains ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 5px;
+}
+@media (max-width: 830px) {
+  .section--explains ul {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+  }
+}
+.section--explains ul li {
+  position: relative;
+  list-style-type: none;
+  border-radius: 18px;
+  background-color: #f6f6f6;
+  padding: 15px 20px;
+  margin: 0px 10px 0px 20px;
+  box-shadow: 2px 1px 16px -3px grey;
+}
+.section--explains ul li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: #9356DC;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: -15px;
+  top: 10px;
+}
+.section--explains ul li:hover {
+  transform: scale(1.02);
+}
+.section--explains ul li i.fas {
+  margin-right: 10px;
+  color: #7e7e7e;
+  font-size: 16px;
+}
 
 header {
   display: flex;
@@ -28,22 +81,28 @@ header {
   justify-content: center;
   position: relative;
   height: 80px;
-  box-shadow: 0 0 0.5rem grey; }
-  header h1 {
-    font-family: "shrikhand" ,"Roboto", cursive; }
+  box-shadow: 0 0 0.5rem grey;
+}
+header h1 {
+  font-family: "shrikhand", "Roboto", cursive;
+}
 
-.section--one {
+.section--heading {
   text-align: center;
-  background-image: linear-gradient(white, #fafafa); }
-  .section--one > aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    background-color: #F3F3F3; }
-    .section--one > aside > h3 {
-      padding-left: 10px; }
-  .section--one > h2 {
-    margin: 20px; }
+  background-image: linear-gradient(white, #fafafa);
+}
+.section--heading > aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #F3F3F3;
+}
+.section--heading > aside > h3 {
+  padding-left: 10px;
+}
+.section--heading > h2 {
+  margin: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
