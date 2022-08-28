@@ -2,14 +2,12 @@
 @use "../utils/mixins";
 
 .section-cards {
-    background-color: aqua;
-    // background-color: variables.$base-grey;
+    // background-color: aqua;
+    background-color: variables.$base-grey;
     padding: 20px;
     & .container-menu {
         display: flex;
         flex-wrap: wrap;
-        // display: grid;
-        // grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }    
 }
@@ -21,6 +19,7 @@
     min-width: 280px;
     flex-grow: 1;
     background-color: white;
+    @include mixins.shadow(black);
     &__img {
         border-radius: 15px 15px 0px 0px;        
         height: 195px;
@@ -39,10 +38,6 @@
 
     &__body {
         position: relative;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-        // margin: 10px;
         & h3, p {
             margin: 10px;
         }
@@ -67,6 +62,7 @@
         height: 30px;
         width: 80px;
         @include mixins.center;
+        box-shadow: 3px 3px 10px 1px #000000ba;
         border-radius: 3px;
         background-color: variables.$green-blue;
         color: darken($color: variables.$green-blue, $amount: 40%);

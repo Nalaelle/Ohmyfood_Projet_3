@@ -17,6 +17,7 @@
 
     &:hover {
         @include mixins.zoom;
+        @include mixins.shadow(black);
         opacity: 0.9;
     }
 }

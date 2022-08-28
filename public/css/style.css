@@ -9,7 +9,11 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
 }
 
 button {
@@ -27,6 +31,7 @@ button {
 }
 button:hover {
   transform: scale(1.02);
+  box-shadow: 2px 1px 16px -3px black;
   opacity: 0.9;
 }
 
@@ -50,7 +55,6 @@ button:hover {
 }
 .section-explains ul li {
   position: relative;
-  list-style-type: none;
   border-radius: 18px;
   background-color: #F6F6F6;
   padding: 15px 20px;
@@ -111,7 +115,7 @@ header h1 {
 }
 
 .section-cards {
-  background-color: aqua;
+  background-color: #F6F6F6;
   padding: 20px;
 }
 .section-cards .container-menu {
@@ -127,6 +131,7 @@ header h1 {
   min-width: 280px;
   flex-grow: 1;
   background-color: white;
+  box-shadow: 2px 1px 16px -3px black;
 }
 .card__img {
   border-radius: 15px 15px 0px 0px;
@@ -176,9 +181,29 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.7294117647);
   border-radius: 3px;
   background-color: #99E2D0;
   color: #278870;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px;
+}
+footer > h3 {
+  font-family: "shrikhand", "Roboto", cursive;
+  margin-bottom: 10px;
+}
+footer ul li {
+  margin: 5px;
+}
+footer ul li:hover {
+  font-weight: bold;
+}
+footer ul i {
+  width: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

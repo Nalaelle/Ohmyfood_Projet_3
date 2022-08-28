@@ -1,0 +1,24 @@
+@use "../utils/variables";
+
+footer {
+    background-color: variables.$footer-black;
+    color: white;
+    padding: 20px;
+    & > h3 {
+        font-family: "shrikhand" ,"Roboto", cursive;
+        margin-bottom: 10px;
+    }
+
+    & ul {
+        & li {
+            margin: 5px;
+            &:hover {
+                font-weight: bold;
+            }
+        }
+        & i {
+        width: 30px;
+        }
+    }
+
+}
