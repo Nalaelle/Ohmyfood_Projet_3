@@ -1,7 +1,7 @@
 @use "../utils/variables";
 @use "../utils/mixins";
 
-.section--explains {
+.section-explains {
     counter-reset: steps;
     & h2 {
         margin-left: 15px;
@@ -37,7 +37,7 @@
             list-style-type: none;
             // border: 2px red solid;
             border-radius: 18px;
-            background-color: #f6f6f6;
+            background-color: variables.$base-grey;
             padding: 15px 20px;
             margin: 0px 10px 0px 20px;
             @include mixins.shadow(grey);
@@ -46,7 +46,7 @@
             }
             & i.fas {
                 margin-right: 10px;
-                color: variables.$grey-icons;
+                color: variables.$icons-grey;
                 font-size: 16px;
             }
         }

@@ -7,6 +7,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 button {
   margin: 20px;
   padding: 10px 20px;
@@ -25,34 +30,34 @@ button:hover {
   opacity: 0.9;
 }
 
-.section--explains {
+.section-explains {
   counter-reset: steps;
 }
-.section--explains h2 {
+.section-explains h2 {
   margin-left: 15px;
 }
-.section--explains ul {
+.section-explains ul {
   display: flex;
   justify-content: space-around;
   margin: 15px 5px;
 }
 @media (max-width: 830px) {
-  .section--explains ul {
+  .section-explains ul {
     flex-direction: column;
     gap: 20px;
     max-width: 500px;
   }
 }
-.section--explains ul li {
+.section-explains ul li {
   position: relative;
   list-style-type: none;
   border-radius: 18px;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   padding: 15px 20px;
   margin: 0px 10px 0px 20px;
   box-shadow: 2px 1px 16px -3px grey;
 }
-.section--explains ul li::before {
+.section-explains ul li::before {
   content: counter(steps);
   counter-increment: steps;
   color: white;
@@ -66,10 +71,10 @@ button:hover {
   left: -15px;
   top: 10px;
 }
-.section--explains ul li:hover {
+.section-explains ul li:hover {
   transform: scale(1.02);
 }
-.section--explains ul li i.fas {
+.section-explains ul li i.fas {
   margin-right: 10px;
   color: #7e7e7e;
   font-size: 16px;
@@ -87,22 +92,93 @@ header h1 {
   font-family: "shrikhand", "Roboto", cursive;
 }
 
-.section--heading {
+.section-heading {
   text-align: center;
   background-image: linear-gradient(white, #fafafa);
 }
-.section--heading > aside {
+.section-heading > aside {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
   background-color: #F3F3F3;
 }
-.section--heading > aside > h3 {
+.section-heading > aside > h3 {
   padding-left: 10px;
 }
-.section--heading > h2 {
+.section-heading > h2 {
   margin: 20px;
+}
+
+.section-cards {
+  background-color: aqua;
+  padding: 20px;
+}
+.section-cards .container-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  border-radius: 15px;
+  height: 270px;
+  width: 45%;
+  min-width: 280px;
+  flex-grow: 1;
+  background-color: white;
+}
+.card__img {
+  border-radius: 15px 15px 0px 0px;
+  height: 195px;
+  width: 100%;
+  background-size: cover;
+}
+.card__img-1 {
+  background-image: url("../../public/img/menu1.jpg");
+}
+.card__img-2 {
+  background-image: url("../../public/img/menu2.jpg");
+}
+.card__img-3 {
+  background-image: url("../../public/img/menu3.jpg");
+}
+.card__img-4 {
+  background-image: url("../../public/img/menu4.jpg");
+}
+.card__link {
+  height: 100%;
+}
+.card__body {
+  position: relative;
+}
+.card__body h3, .card__body p {
+  margin: 10px;
+}
+.card__body i {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.new {
+  position: relative;
+}
+.new::before {
+  content: "Nouveau";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #99E2D0;
+  color: #278870;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 @use "../utils/variables";
 @use "../utils/mixins";
 
-.section--heading {
+.section-heading {
     text-align: center;
     background-image: linear-gradient(white, variables.$light-grey);
     & > aside {
