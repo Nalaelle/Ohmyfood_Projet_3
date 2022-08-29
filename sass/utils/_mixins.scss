@@ -1,3 +1,5 @@
+@use "./variables";
+
 @mixin shadow ($colour){
     box-shadow: 2px 1px 16px -3px $colour;
 }
@@ -16,6 +18,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin gradient {
+    background-image: linear-gradient(variables.$pink, variables.$purple);
 }
 
 //@include nom-de-mixin; //*//*

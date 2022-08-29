@@ -12,7 +12,7 @@
     color: white;
     cursor: pointer;
     @include mixins.shadow(grey);
-    background-image: linear-gradient(variables.$pink, variables.$purple);
+    @include mixins.gradient;
     transition: all 200ms;
 
     &:hover {

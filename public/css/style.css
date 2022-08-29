@@ -36,6 +36,7 @@ button:hover {
 }
 
 .section-explains {
+  padding: 30px 0px;
   counter-reset: steps;
 }
 .section-explains h2 {
@@ -84,6 +85,44 @@ button:hover {
   font-size: 16px;
 }
 
+.new {
+  position: relative;
+}
+.new::before {
+  content: "Nouveau";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.7294117647);
+  border-radius: 3px;
+  background-color: #99E2D0;
+  color: #278870;
+}
+
+.card__body i {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.card__body .fas {
+  opacity: 0;
+  transition: all 200ms;
+}
+.card__body .fas:hover {
+  opacity: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
 header {
   display: flex;
   align-items: center;
@@ -117,6 +156,9 @@ header h1 {
 .section-cards {
   background-color: #F6F6F6;
   padding: 20px;
+}
+.section-cards h2 {
+  margin-bottom: 20px;
 }
 .section-cards .container-menu {
   display: flex;
@@ -159,32 +201,6 @@ header h1 {
 }
 .card__body h3, .card__body p {
   margin: 10px;
-}
-.card__body i {
-  font-size: 25px;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-}
-
-.new {
-  position: relative;
-}
-.new::before {
-  content: "Nouveau";
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  height: 30px;
-  width: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.7294117647);
-  border-radius: 3px;
-  background-color: #99E2D0;
-  color: #278870;
 }
 
 footer {
