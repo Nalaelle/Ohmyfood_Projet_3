@@ -1,0 +1,32 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.check {
+    margin-right: -72px;
+    background-color: variables.$green-blue;
+    width: 70px;
+    transition: margin-right 0.5s;
+    display: grid;
+    place-items: center;
+    color: variables.$green-blue;
+    flex-shrink: 0;
+    & > i {
+        height: 25px;
+        aspect-ratio: 1;
+        background-color: white;
+        border-radius: 50%;
+        @include mixins.center;
+        font-size: 19px;                    
+    }                
+}
+.choice {
+    &:hover {
+        .check {
+            margin-right: 0px;
+        }
+        i {
+            @include mixins.check-turn;
+            animation: check-turn 1s ease-in-out;
+        }
+    }
+}

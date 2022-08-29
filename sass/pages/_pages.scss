@@ -8,8 +8,6 @@
         height: 70vh;
         object-fit: cover;
     }
-    // border: 5px red solid;
-
 }
 
 h2 {
@@ -24,19 +22,15 @@ h2 {
 //food food__cards choice  description  tarifs
 .food {
     background-color: variables.$base-grey;
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 0px 30px 50px 30px;
+    padding: 0px 30px 20px 30px;
     @media (max-width: 992px) {
         flex-direction: column;
     }    
 
-    &__cards {
-        // background-color: yellow;
-        // border: 1px rgb(20, 20, 20) solid;         
+    &__cards {       
         & > h3 {
             text-transform: uppercase;
             font-weight: 400;
@@ -51,79 +45,6 @@ h2 {
                 top: 25px;
                 left: 0px;
             }
-        }
-
-        .choice {
-            background-color: white;
-            // border: 1px aqua solid;
-            border-radius: 15px;
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px; 
-            height: 70px;
-            @include mixins.shadow(grey); 
-            overflow: hidden;           
-
-            &__description {
-                margin: 15px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                flex-grow: 1;
-
-                overflow: hidden;
-                white-space: wrap;
-                text-overflow: ellipsis;
-
-                & > h4 {
-                    padding-bottom: 6px;                    
-                }
-                & h4, p {
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;                
-                }
-            }
-
-            &__tarifs {
-                display: flex;
-                align-items: flex-end;
-                margin: 10px;
-                font-weight: bold;                
-            }
-            .check {
-                // border: 1px red solid;
-                margin-right: -72px;
-                background-color: variables.$green-blue;
-                width: 70px;
-                transition: margin-right 0.5s;
-                display: grid;
-                place-items: center;
-                color: variables.$green-blue;
-                flex-shrink: 0;
-                & > i {
-                    height: 25px;
-                    aspect-ratio: 1;
-                    background-color: white;
-                    border-radius: 50%;
-                    @include mixins.center;
-                    font-size: 19px;                    
-                }                
-            }
-
-            &:hover {
-                .check {
-                    margin-right: 0px;
-                }
-                i {
-                    @include mixins.check-turn;
-                    animation: check-turn 1s ease-in-out;
-                }
-            }
-        }
+        }        
     }
 }
-
-// overflow: hidden;
-// white-space: wrap;
-// text-overflow: ellipsis;

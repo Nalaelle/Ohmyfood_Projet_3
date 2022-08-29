@@ -35,6 +35,16 @@ button:hover {
   opacity: 0.9;
 }
 
+.btn-footer {
+  display: flex;
+  justify-content: center;
+  background-color: #F6F6F6;
+  padding-bottom: 20px;
+}
+.btn-footer .btn-pages {
+  width: 200px;
+}
+
 .section-explains {
   padding: 30px 0px;
   counter-reset: steps;
@@ -248,6 +258,77 @@ footer ul i {
   width: 30px;
 }
 
+.choice {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 70px;
+  box-shadow: 2px 1px 16px -3px grey;
+  overflow: hidden;
+}
+.choice__description {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+}
+.choice__description > h4 {
+  padding-bottom: 6px;
+}
+.choice__description h4, .choice__description p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.choice__tarifs {
+  display: flex;
+  align-items: flex-end;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.check {
+  margin-right: -72px;
+  background-color: #99E2D0;
+  width: 70px;
+  transition: margin-right 0.5s;
+  display: grid;
+  place-items: center;
+  color: #99E2D0;
+  flex-shrink: 0;
+}
+.check > i {
+  height: 25px;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+}
+
+.choice:hover .check {
+  margin-right: 0px;
+}
+.choice:hover i {
+  animation: check-turn 1s ease-in-out;
+}
+@keyframes check-turn {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
 .img-heading > img {
   width: 100%;
   height: 70vh;
@@ -312,7 +393,7 @@ h2:hover::after {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 0px 30px 50px 30px;
+  padding: 0px 30px 20px 30px;
 }
 @media (max-width: 992px) {
   .food {
@@ -333,74 +414,6 @@ h2:hover::after {
   position: absolute;
   top: 25px;
   left: 0px;
-}
-.food__cards .choice {
-  background-color: white;
-  border-radius: 15px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  height: 70px;
-  box-shadow: 2px 1px 16px -3px grey;
-  overflow: hidden;
-}
-.food__cards .choice__description {
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
-  overflow: hidden;
-  white-space: wrap;
-  text-overflow: ellipsis;
-}
-.food__cards .choice__description > h4 {
-  padding-bottom: 6px;
-}
-.food__cards .choice__description h4, .food__cards .choice__description p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.food__cards .choice__tarifs {
-  display: flex;
-  align-items: flex-end;
-  margin: 10px;
-  font-weight: bold;
-}
-.food__cards .choice .check {
-  margin-right: -72px;
-  background-color: #99E2D0;
-  width: 70px;
-  transition: margin-right 0.5s;
-  display: grid;
-  place-items: center;
-  color: #99E2D0;
-  flex-shrink: 0;
-}
-.food__cards .choice .check > i {
-  height: 25px;
-  aspect-ratio: 1;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 19px;
-}
-.food__cards .choice:hover .check {
-  margin-right: 0px;
-}
-.food__cards .choice:hover i {
-  animation: check-turn 1s ease-in-out;
-}
-@keyframes check-turn {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

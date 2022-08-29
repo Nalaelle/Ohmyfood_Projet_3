@@ -1,0 +1,42 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.choice {
+    background-color: white;
+    // border: 1px aqua solid;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+    height: 70px;
+    @include mixins.shadow(grey); 
+    overflow: hidden;           
+
+    &__description {
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+
+        overflow: hidden;
+        white-space: wrap;
+        text-overflow: ellipsis;
+
+        & > h4 {
+            padding-bottom: 6px;                    
+        }
+        & h4, p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;                
+        }
+    }
+
+    &__tarifs {
+        display: flex;
+        align-items: flex-end;
+        margin: 10px;
+        font-weight: bold;                
+    }
+}

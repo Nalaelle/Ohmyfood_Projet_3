@@ -21,3 +21,14 @@
         opacity: 0.9;
     }
 }
+
+.btn-footer {
+    display: flex;
+    justify-content: center;
+    background-color: variables.$base-grey;
+    padding-bottom: 20px;
+    .btn-pages {
+    width: 200px;
+    }
+}
+
