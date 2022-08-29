@@ -2,23 +2,5 @@
 @use "../utils/mixins";
 
 .card__body {
-    & i {
-        font-size: 25px;
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);            
-    }
-
-    & .fas {
-        opacity: 0;
-        transition: all 200ms;
-    }    
-    & .fas:hover {            
-        opacity: 1;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        @include mixins.gradient;            
-    }
+      @include mixins.heart-icones;    
 }

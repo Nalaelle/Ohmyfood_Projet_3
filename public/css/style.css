@@ -104,23 +104,49 @@ button:hover {
   color: #278870;
 }
 
-.card__body i {
+.card__body::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialised;
+  font-family: "Font awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
   font-size: 25px;
   position: absolute;
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
-}
-.card__body .fas {
-  opacity: 0;
-  transition: all 200ms;
-}
-.card__body .fas:hover {
-  opacity: 1;
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  transition: all 200ms;
+  opacity: 1;
+}
+.card__body::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialised;
+  font-family: "Font awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 200ms;
+  opacity: 0;
   background-image: linear-gradient(#FF79DA, #9356DC);
+  color: transparent;
+  font-weight: 900;
+}
+.card__body:hover::after {
+  opacity: 1;
 }
 
 header {
@@ -220,6 +246,161 @@ footer ul li:hover {
 }
 footer ul i {
   width: 30px;
+}
+
+.img-heading > img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+h2 {
+  padding: 25px;
+  margin-top: -60px;
+  position: relative;
+  font-family: "shrikhand", "Roboto", cursive;
+  border-radius: 35px 35px 0px 0px;
+  background-color: #F6F6F6;
+}
+h2::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialised;
+  font-family: "Font awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 200ms;
+  opacity: 1;
+}
+h2::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialised;
+  font-family: "Font awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 200ms;
+  opacity: 0;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: transparent;
+  font-weight: 900;
+}
+h2:hover::after {
+  opacity: 1;
+}
+
+.food {
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0px 30px 50px 30px;
+}
+@media (max-width: 992px) {
+  .food {
+    flex-direction: column;
+  }
+}
+.food__cards > h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 20px;
+  position: relative;
+}
+.food__cards > h3::after {
+  content: "";
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+}
+.food__cards .choice {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 70px;
+  box-shadow: 2px 1px 16px -3px grey;
+  overflow: hidden;
+}
+.food__cards .choice__description {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+}
+.food__cards .choice__description > h4 {
+  padding-bottom: 6px;
+}
+.food__cards .choice__description h4, .food__cards .choice__description p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.food__cards .choice__tarifs {
+  display: flex;
+  align-items: flex-end;
+  margin: 10px;
+  font-weight: bold;
+}
+.food__cards .choice .check {
+  margin-right: -72px;
+  background-color: #99E2D0;
+  width: 70px;
+  transition: margin-right 0.5s;
+  display: grid;
+  place-items: center;
+  color: #99E2D0;
+  flex-shrink: 0;
+}
+.food__cards .choice .check > i {
+  height: 25px;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+}
+.food__cards .choice:hover .check {
+  margin-right: 0px;
+}
+.food__cards .choice:hover i {
+  animation: check-turn 1s ease-in-out;
+}
+@keyframes check-turn {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
