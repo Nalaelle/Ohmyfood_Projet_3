@@ -329,13 +329,44 @@ footer ul i {
   }
 }
 
+@keyframes move-choice {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.choice {
+  animation: move-choice 3s ease;
+  animation-fill-mode: both;
+}
+.choice:nth-child(1) {
+  animation-delay: 100ms;
+}
+.choice:nth-child(2) {
+  animation-delay: 200ms;
+}
+.choice:nth-child(3) {
+  animation-delay: 300ms;
+}
+.choice:nth-child(4) {
+  animation-delay: 400ms;
+}
+.choice:nth-child(5) {
+  animation-delay: 500ms;
+}
+
 header a i {
   font-weight: 900;
   font-size: 25px;
   position: absolute;
   left: 15px;
-  top: 30px;
+  top: 25px;
   cursor: pointer;
+}
+header a i:hover {
+  font-size: 30px;
 }
 
 .img-heading > img {
