@@ -24,14 +24,18 @@
     background-image: linear-gradient(variables.$pink, variables.$purple);
 }
 
-@mixin hearts ($opacity: 1){
+@mixin icon {
     display: inline-block;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialised;
     font-family: "Font awesome 5 Free";
-    font-weight: 400;
+    font-weight: 400;    
+}
+
+@mixin hearts ($opacity: 1){
+    @include icon;
     content: "\f004";
     font-size: 25px;
     position: absolute;

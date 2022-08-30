@@ -1,6 +1,20 @@
 @use "../utils/variables";
 @use "../utils/mixins";
 
+header {
+    a {
+        // position: relative;
+        & i {
+            font-weight: 900;
+            font-size: 25px;
+            position: absolute;
+            left: 15px;
+            top: 30px;
+            cursor: pointer;
+        }
+    }   
+}
+
 
 .img-heading {
     & > img {
@@ -10,7 +24,7 @@
     }
 }
 
-h2 {
+.title-page {
     padding: 25px;
     margin-top: -60px;
     position: relative;
