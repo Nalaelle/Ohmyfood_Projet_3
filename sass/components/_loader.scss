@@ -1,0 +1,71 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+@keyframes loading {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        border-radius: 50%;
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }    
+}
+@keyframes move {
+    0% {
+    border-radius:0 0 0 0;
+    background: variables.$purple-dark;
+    }
+    25% {
+    border-radius:10% 10% 10% 10%;
+    background: variables.$purple;
+    }
+    50% {
+    border-radius:25% 25% 25% 25%;
+    background: variables.$pink;
+    }
+    75% {
+    border-radius:40% 40% 40% 40%;
+    background:variables.$green-blue;
+    }
+    100% {
+    border-radius:50%;
+    background:variables.$green-blue;
+    }
+}
+
+.loader {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    inset: 0;
+    background-color: rgba(218, 210, 210, 0.952);
+    opacity: 0.8;
+    height: 100vh;
+    z-index: 2;
+    animation: loading 10s ease-in-out;
+    animation-fill-mode: forwards;
+    .cube {
+        height: 50px;
+        width: 50px;
+        animation: move 5s;
+        animation-fill-mode: forwards;
+        .circle {
+            height: 50px;
+            width: 50px;
+            border-top: 5px variables.$purple solid;
+            border-bottom: 5px variables.$pink solid;
+            border-radius: 50%;
+            animation: spin 1s infinite linear;        
+            display: grid;
+            place-items: center;
+        }
+    }
+}
+

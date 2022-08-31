@@ -12,7 +12,7 @@
     flex-shrink: 0;
     & > i {
         height: 25px;
-        aspect-ratio: 1;
+        width: 25px;
         background-color: white;
         border-radius: 50%;
         @include mixins.center;
