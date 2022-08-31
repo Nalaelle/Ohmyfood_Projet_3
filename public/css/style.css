@@ -508,6 +508,14 @@ header a i:hover {
     flex-direction: column;
   }
 }
+.food__cards {
+  width: 33%;
+}
+@media (max-width: 992px) {
+  .food__cards {
+    width: 100%;
+  }
+}
 .food__cards > h3 {
   text-transform: uppercase;
   font-weight: 400;
