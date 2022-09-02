@@ -327,7 +327,7 @@ footer ul i {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  height: 70px;
+  height: 75px;
   box-shadow: 2px 1px 16px -3px grey;
   overflow: hidden;
 }
@@ -342,6 +342,7 @@ footer ul i {
 }
 .choice__description > h4 {
   padding-bottom: 6px;
+  font-size: 15px;
 }
 .choice__description > p {
   font-size: 14px;
@@ -438,7 +439,7 @@ header a i:hover {
 
 .img-heading > img {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   object-fit: cover;
 }
 
@@ -499,8 +500,6 @@ header a i:hover {
   background-color: #F6F6F6;
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 0px 15px 20px 15px;
 }
 @media (max-width: 992px) {
   .food {
@@ -509,6 +508,8 @@ header a i:hover {
 }
 .food__cards {
   width: 33%;
+  overflow: hidden;
+  padding: 0px 15px;
 }
 @media (max-width: 992px) {
   .food__cards {
