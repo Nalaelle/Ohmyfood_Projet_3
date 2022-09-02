@@ -429,7 +429,7 @@ footer ul i {
 }
 .choice {
   animation: move-choice 3s ease;
-  animation-fill-mode: both;
+  animation-fill-mode: backwards;
 }
 .choice:nth-child(1) {
   animation-delay: 100ms;

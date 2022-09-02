@@ -14,7 +14,7 @@
 
 .choice {
     animation: move-choice 3s ease;
-    animation-fill-mode: both;
+    animation-fill-mode: backwards;
     @for $i from 1 through 5 {
         &:nth-child(#{$i}) {
            animation-delay: 100ms * $i;
