@@ -332,7 +332,7 @@ footer ul i {
   overflow: hidden;
 }
 .choice__description {
-  margin: 15px;
+  margin: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -343,6 +343,9 @@ footer ul i {
 .choice__description > h4 {
   padding-bottom: 6px;
 }
+.choice__description > p {
+  font-size: 14px;
+}
 .choice__description h4, .choice__description p {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -351,14 +354,14 @@ footer ul i {
 .choice__tarifs {
   display: flex;
   align-items: flex-end;
-  margin: 10px;
+  margin: 10px 10px 15px 0px;
   font-weight: bold;
 }
 
 .check {
   margin-right: -72px;
   background-color: #99E2D0;
-  width: 70px;
+  width: 72px;
   transition: margin-right 0.5s;
   display: grid;
   place-items: center;
@@ -497,7 +500,7 @@ header a i:hover {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 0px 30px 20px 30px;
+  padding: 0px 15px 20px 15px;
 }
 @media (max-width: 992px) {
   .food {
