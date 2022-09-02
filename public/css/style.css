@@ -354,7 +354,7 @@ footer ul i {
   overflow: hidden;
 }
 .choice__description {
-  margin: 8px;
+  margin: 8px 5px 8px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
