@@ -1,14 +1,12 @@
 @use "../utils/variables";
-@use "../utils/mixins";
 
 .section-heading {
     text-align: center;
-    background-image: linear-gradient(white, variables.$light-grey);
+    background-image: linear-gradient(white, variables.$grey);
     & > aside {
         display: flex;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center;        
         height: 60px;
         background-color: variables.$grey;
 

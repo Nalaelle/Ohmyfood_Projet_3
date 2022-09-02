@@ -2,8 +2,7 @@
 @use "../utils/mixins";
 
 header {
-    a {
-        // position: relative;
+    a { // position: relative;
         & i {
             font-weight: 900;
             font-size: 25px;
@@ -12,7 +11,7 @@ header {
             top: 25px;
             cursor: pointer;
             &:hover {
-                font-size: 30px;
+                transform: scale(1.5);
             }
         }
     }   
