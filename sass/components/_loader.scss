@@ -12,33 +12,6 @@
         transform: scale(0);
     }
 }
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }    
-}
-@keyframes move {
-    0% {
-    border-radius:0 0 0 0;
-    background: variables.$purple-dark;
-    }
-    25% {
-    border-radius:10% 10% 10% 10%;
-    background: variables.$purple;
-    }
-    50% {
-    border-radius:25% 25% 25% 25%;
-    background: variables.$pink;
-    }
-    75% {
-    border-radius:40% 40% 40% 40%;
-    background:variables.$green-blue;
-    }
-    100% {
-    border-radius:50%;
-    background:variables.$green-blue;
-    }
-}
 
 .loader {
     position: fixed;
@@ -51,21 +24,36 @@
     z-index: 2;
     animation: loading 10s ease-in-out;
     animation-fill-mode: forwards;
-    .cube {
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    // perspective: 200px;
+
+    & > div {
+        position: absolute;
+        top: 0;
         height: 50px;
         width: 50px;
-        animation: move 5s;
-        animation-fill-mode: forwards;
-        .circle {
-            height: 50px;
-            width: 50px;
-            border-top: 5px variables.$purple solid;
-            border-bottom: 5px variables.$pink solid;
-            border-radius: 50%;
-            animation: spin 1s infinite linear;        
-            display: grid;
-            place-items: center;
+        background-color: variables.$pink;
+        animation: rotation 2s linear infinite;
+        transform-origin: right bottom;
+
+        &:nth-child(2) {
+            animation-delay: 1s;
+            opacity: 0.6;
         }
     }
 }
+
+@keyframes rotation {
+    0% {transform: rotateX(0) rotateY(0);}
+    25% {transform: rotateX(0) rotateY(180deg);}
+    50% {transform: rotateX(180deg) rotateY(180deg);}
+    75% {transform: rotateX(180deg) rotateY(0);}
+    100% {transform: rotateX(0) rotateY(0);}    
+}
+
 

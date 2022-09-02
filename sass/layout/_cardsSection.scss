@@ -14,6 +14,9 @@
     }    
 }
 .card {
+    &:hover {
+        @include mixins.zoom;
+    }
     border-radius: 15px;
     height: 270px;
     width: 45%;
