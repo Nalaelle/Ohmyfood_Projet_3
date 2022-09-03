@@ -7,7 +7,7 @@
     50% {opacity: 0.6;}
     75% {opacity: 0.4;}
     99% {opacity: 0; transform: scale(1);}
-    100% {transform: scale(0);}
+    100% {opacity: 0; transform: scale(0);}
 }
 
 .loader {
