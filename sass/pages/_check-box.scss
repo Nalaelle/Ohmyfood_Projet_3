@@ -3,12 +3,12 @@
 
 .check {
     margin-right: -72px;
-    background-color: variables.$green-blue;
+    background-color: variables.$tertiary;
     width: 72px;
     transition: margin-right 0.5s;
     display: grid;
     place-items: center;
-    color: variables.$green-blue;
+    color: variables.$tertiary;
     flex-shrink: 0;
     & > i {
         height: 25px;

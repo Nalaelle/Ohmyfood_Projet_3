@@ -30,13 +30,13 @@
     perspective: 200px;
 
     & .dot-1 {
-        background-color: variables.$pink;
+        background-color: variables.$secondary;
     }
     & .dot-2 {
-        background-color: variables.$purple;
+        background-color: variables.$primary;
     }
     & .dot-3 {
-        background-color: variables.$green-blue;
+        background-color: variables.$tertiary;
     }
 
     & > div {

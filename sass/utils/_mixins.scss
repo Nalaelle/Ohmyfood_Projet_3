@@ -15,7 +15,7 @@
 }
 
 @mixin gradient {
-    background-image: linear-gradient(variables.$pink, variables.$purple);
+    background-image: linear-gradient(variables.$secondary, variables.$primary);
 }
 
 @mixin icon {

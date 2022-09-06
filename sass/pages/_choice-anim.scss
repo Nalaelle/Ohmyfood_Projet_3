@@ -21,3 +21,13 @@
         }
     }
 }
+
+.food__cards {
+    animation: move-choice 3s ease;
+    animation-fill-mode: backwards;
+    @for $n from 1 through 4 {
+        &:nth-child(#{$n}) {
+           animation-delay: 300ms * $n;
+        }
+    }
+}

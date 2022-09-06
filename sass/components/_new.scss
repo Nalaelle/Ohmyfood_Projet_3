@@ -14,8 +14,8 @@
         @include mixins.center;
         box-shadow: 3px 3px 10px 1px #000000ba;
         border-radius: 3px;
-        background-color: variables.$green-blue;
-        color: darken($color: variables.$green-blue, $amount: 40%);
+        background-color: variables.$tertiary;
+        color: darken($color: variables.$tertiary, $amount: 40%);
     }
 
 }
