@@ -14,7 +14,7 @@
         @media (max-width: 830px) {
             flex-direction: column;
             gap: 20px;
-            max-width: 500px;
+            // max-width: 500px;
         }
 
         & li {
@@ -31,20 +31,25 @@
                 place-items: center;
                 position: absolute;
                 left: -15px;
-                top: 10px;
+                top: 23px;
                 
             }
+            cursor: pointer;
             position: relative;
-            border-radius: 18px;
+            border-radius: 20px;
             background-color: variables.$base-grey;
             padding: 15px 20px;
             margin: 0px 10px 0px 20px;
-            @include mixins.shadow(grey);
+            box-shadow: 3px 4px 8px -3px grey;
+            display: flex;
+            align-items: center;
+            height: 70px;
             &:hover {
                 @include mixins.zoom;
+                background-color: rgb(245 ,237 , 255);
             }
             & i.fas {
-                margin-right: 10px;
+                margin-right: 20px;
                 color: variables.$icons-grey;
                 font-size: 16px;
             }

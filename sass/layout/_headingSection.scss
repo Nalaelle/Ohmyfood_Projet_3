@@ -10,8 +10,12 @@
         height: 60px;
         background-color: variables.$grey;
 
-        & > h3 {
+        & > input {
             padding-left: 10px;
+            border: none;
+            background-color: transparent;
+            font-weight: bold;
+            font-size: 20px;
         }
     }
 

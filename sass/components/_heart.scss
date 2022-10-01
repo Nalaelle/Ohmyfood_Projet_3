@@ -1,6 +1,13 @@
 @use "../utils/variables";
 @use "../utils/mixins";
 
-.card__body {
+// .card__body {
+//       @include mixins.heart-icones;    
+// }
+
+.coeur {
+      position: relative;
+      top: -38px;
+      right: -3px;
       @include mixins.heart-icones;    
 }
