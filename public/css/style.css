@@ -246,16 +246,15 @@ button:hover {
   -webkit-background-clip: text;
   transition: all 200ms;
   opacity: 0;
-  background-image: linear-gradient(7deg, #FF79DA, #9356DC);
   color: transparent;
   font-weight: 900;
   background-color: #fff;
-  background-image: linear-gradient(#9356DC, rgba(255, 255, 255, 0));
-  transition: background-color 4s;
+  background-image: linear-gradient(-176deg, rgba(255, 255, 255, 0), #FF79DA 126%);
+  transition: background-color 3s;
 }
 .coeur:hover::after {
   opacity: 1;
-  background-color: #FF79DA;
+  background-color: #9356DC;
 }
 
 header {
