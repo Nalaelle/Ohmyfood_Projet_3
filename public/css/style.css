@@ -251,7 +251,7 @@ button:hover {
   color: transparent;
   font-weight: 900;
   background-color: #fff;
-  background-image: linear-gradient(-176deg, rgba(255, 255, 255, 0), #FF79DA 126%);
+  background-image: linear-gradient(-176deg, rgba(255, 255, 255, 0), #FF79DA 136%);
   transition: background-color 3s;
 }
 .coeur:hover::after {
