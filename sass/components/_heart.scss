@@ -9,5 +9,14 @@
       position: relative;
       top: -38px;
       right: -3px;
-      @include mixins.heart-icones;    
+      @include mixins.heart-icones;
 }
+
+// div{
+//       background-color: deeppink;
+//       background-image: linear-gradient( white, rgba(255,255,255,0));
+//       transition: background-color 1s;
+//  }
+//  div:hover{
+//       background-color: steelblue;
+//  }

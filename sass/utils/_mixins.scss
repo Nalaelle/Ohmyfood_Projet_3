@@ -49,9 +49,14 @@
         @include gradient($deg:7deg);        
         color: transparent;
         font-weight: 900;
+
+        background-color: #fff;
+        background-image: linear-gradient( variables.$primary, rgba(255, 255, 255, 0));
+        transition: background-color 4s;
     }
     &:hover::after {
         opacity: 1;
+        background-color: variables.$secondary;
     } 
 }
 
