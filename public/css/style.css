@@ -160,6 +160,7 @@ button:hover {
   display: flex;
   align-items: center;
   height: 70px;
+  white-space: nowrap;
 }
 .section-explains ul li::before {
   content: counter(steps);
@@ -208,6 +209,7 @@ button:hover {
   position: relative;
   top: -38px;
   right: -3px;
+  cursor: pointer;
 }
 .coeur::before {
   display: inline-block;
@@ -286,6 +288,8 @@ header h1 {
   background-color: transparent;
   font-weight: bold;
   font-size: 20px;
+  text-align: center;
+  width: 180px;
 }
 .section-heading > h2 {
   margin: 20px;

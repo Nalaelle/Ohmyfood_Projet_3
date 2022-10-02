@@ -44,6 +44,7 @@
             display: flex;
             align-items: center;
             height: 70px;
+            white-space: nowrap;
             &:hover {
                 @include mixins.zoom;
                 background-color: rgb(243 ,217 , 241);
