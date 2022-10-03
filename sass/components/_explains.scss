@@ -47,7 +47,7 @@
             white-space: nowrap;
             &:hover {
                 @include mixins.zoom;
-                background-color: rgb(243 ,217 , 241);
+                background-color: #9356DC1F;
             }
             & i.fas {
                 margin-right: 20px;

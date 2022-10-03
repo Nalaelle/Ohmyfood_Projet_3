@@ -178,7 +178,7 @@ button:hover {
 }
 .section-explains ul li:hover {
   transform: scale(1.02);
-  background-color: rgb(243, 217, 241);
+  background-color: rgba(147, 86, 220, 0.1215686275);
 }
 .section-explains ul li i.fas {
   margin-right: 20px;
@@ -252,7 +252,7 @@ button:hover {
   font-weight: 900;
   background-color: #fff;
   background-image: linear-gradient(-176deg, rgba(255, 255, 255, 0), #FF79DA 136%);
-  transition: background-color 3s;
+  transition: background-color 1.5s;
 }
 .coeur:hover::after {
   opacity: 1;
@@ -388,6 +388,7 @@ footer ul i {
   height: 75px;
   box-shadow: 2px 1px 8px -3px grey;
   overflow: hidden;
+  cursor: pointer;
 }
 .choice__description {
   margin: 8px 5px 8px 10px;
@@ -465,40 +466,40 @@ footer ul i {
   }
 }
 .choice {
-  animation: move-choice 3s ease;
+  animation: move-choice 1.5s ease;
   animation-fill-mode: backwards;
 }
 .choice:nth-child(1) {
-  animation-delay: 100ms;
+  animation-delay: 150ms;
 }
 .choice:nth-child(2) {
-  animation-delay: 200ms;
-}
-.choice:nth-child(3) {
   animation-delay: 300ms;
 }
+.choice:nth-child(3) {
+  animation-delay: 450ms;
+}
 .choice:nth-child(4) {
-  animation-delay: 400ms;
+  animation-delay: 600ms;
 }
 .choice:nth-child(5) {
-  animation-delay: 500ms;
+  animation-delay: 750ms;
 }
 
 .food__cards {
-  animation: move-choice 3s ease;
+  animation: move-choice 1.5s ease;
   animation-fill-mode: backwards;
 }
 .food__cards:nth-child(1) {
-  animation-delay: 300ms;
+  animation-delay: 150ms;
 }
 .food__cards:nth-child(2) {
-  animation-delay: 600ms;
+  animation-delay: 300ms;
 }
 .food__cards:nth-child(3) {
-  animation-delay: 900ms;
+  animation-delay: 450ms;
 }
 .food__cards:nth-child(4) {
-  animation-delay: 1200ms;
+  animation-delay: 600ms;
 }
 
 header a i {
