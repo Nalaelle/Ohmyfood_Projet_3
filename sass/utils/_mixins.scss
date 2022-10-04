@@ -58,6 +58,9 @@
         opacity: 1;
         background-color: variables.$primary;
     }
+    &:hover::before {
+        opacity: 0;
+    }
     
     
 }

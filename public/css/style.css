@@ -17,6 +17,10 @@ ul {
   list-style-type: none;
 }
 
+.bloc-page {
+  overflow-x: clip;
+}
+
 @keyframes loading {
   0% {
     opacity: 1;
@@ -115,8 +119,8 @@ button {
 }
 button:hover {
   transform: scale(1.02);
-  box-shadow: 2px 1px 8px -3px black;
   opacity: 0.7;
+  box-shadow: 8px 9px 11px -3px rgb(78, 75, 75);
 }
 
 .btn-footer {
@@ -179,6 +183,7 @@ button:hover {
 .section-explains ul li:hover {
   transform: scale(1.02);
   background-color: rgba(147, 86, 220, 0.1215686275);
+  box-shadow: 8px 9px 11px -3px rgb(78, 75, 75);
 }
 .section-explains ul li i.fas {
   margin-right: 20px;
@@ -257,6 +262,9 @@ button:hover {
 .coeur:hover::after {
   opacity: 1;
   background-color: #9356DC;
+}
+.coeur:hover::before {
+  opacity: 0;
 }
 
 header {

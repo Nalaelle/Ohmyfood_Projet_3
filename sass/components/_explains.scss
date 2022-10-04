@@ -48,6 +48,7 @@
             &:hover {
                 @include mixins.zoom;
                 background-color: #9356DC1F;
+                box-shadow: 8px 9px 11px -3px rgb(78, 75, 75);
             }
             & i.fas {
                 margin-right: 20px;
