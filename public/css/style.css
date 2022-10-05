@@ -234,6 +234,7 @@ button:hover {
   -webkit-background-clip: text;
   transition: all 200ms;
   opacity: 1;
+  transition: background-color 0s;
 }
 .coeur::after {
   display: inline-block;

@@ -43,6 +43,7 @@
 @mixin heart-icones {
     &::before {
         @include hearts;
+        transition: background-color 0s;
     }
     &::after {
         @include hearts($opacity: 0);
