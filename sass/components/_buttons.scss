@@ -17,8 +17,9 @@ button {
 
     &:hover {
         @include mixins.zoom;
-        opacity: 0.7;
+        // opacity: 0.7;
         box-shadow: 8px 9px 11px -3px rgb(78, 75, 75);
+        filter: brightness(125%);
     }
 }
 
