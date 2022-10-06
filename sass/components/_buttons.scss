@@ -13,7 +13,6 @@ button {
     cursor: pointer;
     @include mixins.shadow(grey);
     @include mixins.gradient;
-    transition: all 200ms;
 
     &:hover {
         @include mixins.zoom;
